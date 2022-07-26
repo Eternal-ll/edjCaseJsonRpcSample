@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Description>A AspNet Core IRouter implementation for Json Rpc v2 requests for Microsoft.AspNetCore.Routing.</Description>
+		<Version>5.1.2</Version>
+		<Authors>Gekctek</Authors>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<AssemblyName>EdjCase.JsonRpc.Router</AssemblyName>
+		<PackageId>EdjCase.JsonRpc.Router</PackageId>
+		<PackageTags>JsonRpc Rpc AspNet Json-Rpc .Net Core</PackageTags>
+		<PackageReleaseNotes>Fixing Optional parameter matching issue</PackageReleaseNotes>
+		<PackageProjectUrl>https://github.com/edjCase/JsonRpc</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/edjCase/JsonRpc</RepositoryUrl>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authorization" Version="3.1.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+		<PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.2.2" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="3.1.1" />
+		<PackageReference Include="System.IO.Compression" Version="4.3.0" />
+		<PackageReference Include="System.Text.Json" Version="4.7.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyModel" Version="3.1.1" />
+		<PackageReference Include="Microsoft.AspNetCore.ResponseCompression" Version="2.2.0" />
+	</ItemGroup>
+	<Import Project="..\EdjCase.JsonRpc.Common\EdjCase.JsonRpc.Common.projitems" Label="Shared" />
+
+</Project>
